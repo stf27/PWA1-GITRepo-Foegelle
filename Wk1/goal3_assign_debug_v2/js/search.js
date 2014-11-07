@@ -8,7 +8,7 @@
 	;
 	
 	// Validates search query
-	var validqte == function(query){
+	var validate == function(query){
 		
 		// Trim whitespace from start and end of search query
 		while(query.charAt(0) = " "){
@@ -110,7 +110,7 @@
 	// THE LINE DIRECTLY BELOW IS CORRECT
 	document.forms[0].onsubmit = function(){
 		var query = searchInput.value;
-		validqte(query);
+		validate(query);
 
         // return false is needed for most events - this will be reviewed in upcoming course material
         // THE LINE DIRECTLY BELOW IS CORRECT
