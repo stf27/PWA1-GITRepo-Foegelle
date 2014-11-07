@@ -1,9 +1,4 @@
 /**
- * Duel Fight Game - FINISHED
- * Date: 4/09/13
- * Assignment 1
- * Part 1/3 of series
- *
  * Shelby Foegelle
  * 11/7/14
  * Week 2 - Develop Duel #2
