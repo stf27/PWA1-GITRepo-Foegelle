@@ -15,16 +15,13 @@
     button.addEventListener("click", fight, false); // adds a listener for when the button is pressed
     console.log("FIGHT!!!"); // outputs "FIGHT!!!" to the console
 
-    // Arrays holding each players Name, Damage, and Health (respectively). Index 0 = Name, Index 1 = Damage, Index 2 = Health
-    //var playerOne = ["Cuddles", 21, 100]; // player one name, damage, and health
-    //var playerTwo = ["Toothy", 20, 90]; // player two name, damage, and health
-
     // Object that holds player one's information
     var playerOne = {
         name: "Cuddles", // player one name
         damage: 20, // player one damage
         health: 100 // player one health
     };
+	
     // Object that holds player two's information
     var playerTwo = {
         name: "Toothy", // player two name
