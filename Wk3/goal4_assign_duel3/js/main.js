@@ -70,7 +70,7 @@
         } else{ // if result is something besides "no winner" (there is a winner or a tie), alert the user
             playerOne_txt.innerHTML = result; // outputs the winner to the HTML (set in player one's field)
             playerTwo_txt.innerHTML = ""; // clears player two's field in the HTML to make the winner output clean
-            playerOne_txt.style.padding = "0px 0px 0px 60%"; // updates the padding of player one div to center it
+            playerOne_txt.style.padding = "0px 0px 0px 58%"; // updates the padding of player one div to center it
             playerTwo_txt.style.margin = "0px 0px 0px 0px"; // removes margin for player two to prevent overlap
             button.removeEventListener("click", fight, false); // removes the listener event to stop the user from being able to press the button when the fight is over
             document.querySelector(".buttonblue").innerHTML = "Done!!!"; // updates the button's text to say the fight is over
@@ -84,8 +84,10 @@
             result = "You Both Die!"; // if both player's health is 0 or less, change result to "You Both Die"
         } else if(playerInformation[0].health < 1){ // checks if player one's health is 0 or less
             result = playerInformation[1].name + " Wins!"; // sets result value to player two's name and that they win
-        } else if (playerInformation[1].health < 1) { // checks if player two's health is 0 or less
+        } else if(playerInformation[1].health < 1) { // checks if player two's health is 0 or less
             result = playerInformation[0].name + " Wins!"; // sets result value to player one's name and that they win
+        } else if(round >= 10) { // checks if the fight has reached 10 round before there is a winner
+            result = "Fight Over! No Winner!"; // outputs that the fight has reached the total number of rounds and that the fight is over
         } // closes the if else
        return result; // returns the value of result: if someone has won or not
     } // closes the winnerCheck() function
